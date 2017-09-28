@@ -20,8 +20,8 @@ BASEY        = SCREENHEIGHT * 0.79
 # image, sound and hitmask  dicts
 IMAGES, SOUNDS, HITMASKS = {}, {}, {}
 
-load_saved_pool = 1
-save_current_pool = 1
+load_saved_pool = 0  #Set to 1 once sufficiently trained
+save_current_pool = 1  #Set to 0 once sufficiently trained
 current_pool = []
 fitness = []
 total_models = 50
