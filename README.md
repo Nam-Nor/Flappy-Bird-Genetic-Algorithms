@@ -19,6 +19,8 @@ Your task is simple. Using an existing implementation of a genetic algorithm tha
 	pip install h5py
 	pip install pygame
   ```
+3. Clone/download this repository.
+![Clone repo](Screenshots/Capture.png?raw=true "Cloning this repo")	
 
 ## Algorithm Details (experiment with this)
 * Starts out with a pool of 50 models
