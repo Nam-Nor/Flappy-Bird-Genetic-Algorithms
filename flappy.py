@@ -20,6 +20,9 @@ BASEY        = SCREENHEIGHT * 0.79
 # image, sound and hitmask  dicts
 IMAGES, SOUNDS, HITMASKS = {}, {}, {}
 
+##############################################################################
+# YOU CAN CHANGE STUFF BELOW THIS LINE
+
 load_saved_pool = 0  #Set to 1 once sufficiently trained
 save_current_pool = 1  #Set to 0 once sufficiently trained
 current_pool = []
@@ -86,6 +89,11 @@ if load_saved_pool:
 
 for i in range(total_models):
     print(current_pool[i].get_weights())
+
+
+# YOU CAN CHANGE STUFF ABOVE THIS LINE
+##############################################################################
+
 
 # list of all possible players (tuple of 3 positions of flap)
 PLAYERS_LIST = (
@@ -388,6 +396,8 @@ def mainGame(movementInfo):
         pygame.display.update()
         FPSCLOCK.tick(FPS)
 
+##############################################################################
+# YOU CAN CHANGE STUFF BELOW THIS LINE
 
 def showGameOverScreen(crashInfo):
     """Perform genetic updates here"""
@@ -427,6 +437,9 @@ def showGameOverScreen(crashInfo):
         save_pool()
     generation = generation + 1
     return
+
+# YOU CAN CHANGE STUFF ABOVE THIS LINE
+##############################################################################
 
 
 def getRandomPipe():
